@@ -215,7 +215,7 @@ $(document).ready(function () {
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
         if (MD5($('#invite_code').val()) !== 'c2b4b86c677b969fdf2b9701b868e96f') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect. Try asking Zeph for the code'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbwrsTG7YumsEio-AMA1VC1E6Aml-1InEjQZvjHaIT_ODFjOoFg/exec', data)
                 .done(function (data) {
