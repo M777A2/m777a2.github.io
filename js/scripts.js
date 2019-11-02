@@ -175,6 +175,15 @@ $(document).ready(function () {
         $('#btn-show-content').toggleClass('toggle-map-content');
     });
 
+    $('#hotel-btn-show-map').click(function () {
+        $('#hotel-map-content').toggleClass('toggle-map-content');
+        $('#hotel-btn-show-content').toggleClass('toggle-map-content');
+    });
+    $('#hotel-btn-show-content').click(function () {
+        $('#hotel-map-content').toggleClass('toggle-map-content');
+        $('#hotel-btn-show-content').toggleClass('toggle-map-content');
+    });
+
     /********************** Add to Calendar **********************/
     var myCalendar = createCalendar({
         options: {
@@ -245,6 +254,20 @@ function initMap() {
 
     var marker = new google.maps.Marker({
         position: itc_kol,
+        map: map
+    });
+}
+
+function initHotelMap() {
+    var courtyard = { lat: 37.703660, lng: -121.815139};
+    var map = new google.maps.Map(document.getElementById('hotel-map-canvas'), {
+        zoom: 15,
+        center: courtyard,
+        scrollwheel: false
+    });
+
+    var marker = new google.maps.Marker({
+        position: courtyard,
         map: map
     });
 }
