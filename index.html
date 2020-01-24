@@ -45,6 +45,11 @@
         .modal-backdrop.in {
           opacity: 0.05;
         }
+        .hover-img-link:hover {
+            box-shadow: black;
+            opacity: .9;
+            transform: scale(0.95);
+        }
     </style>
 </head>
 <body id="top">
@@ -351,7 +356,7 @@
             <h4 class="header">We have Registries setup here <i class="em em-money_with_wings" aria-role="presentation" aria-label="MONEY WITH WINGS"></i></h4>
             <div class="row">
                 <div class="col-md-4 offset-md-4 col-sm-8 offset-sm-2 justify-content-center">
-                   <a href="https://www.amazon.com/wedding/share/zephandanita"><img src="img/Amazon_logo.png" class="center-block img-fluid"></a>
+                   <a href="https://www.amazon.com/wedding/share/zephandanita"><img src="img/Amazon_logo.png" class="center-block img-fluid shadow p-3 mb-5 bg-white rounded hover-img-link"></a>
                 </div>
             </div>
         </div>
@@ -376,7 +381,7 @@
         </div>
         <div id="hotel-map-canvas"></div>
         <div id="hotel-map-content-wrapper" class="container pointer-events-none">
-            <div class="row">v
+            <div class="row">
                 <div class="offset-1 col-10 offset-md-3 col-md-6">
                     <div class="text-center">
                         <div id="hotel-btn-show-content" class="toggle-map-content pointer-events-auto">
@@ -384,8 +389,7 @@
                         </div>
                     </div>
                     <div id="hotel-map-content" class="pointer-events-auto">
-                        <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 offset-md-3">
                                 <h5>
                                     <a href="https://www.marriott.com/hotels/travel/oaklm-courtyard-livermore/">Courtyard Marriott at Livermore</a>
                                 </h5>
@@ -394,7 +398,7 @@
                                     Livermore, California 94551 USA
                                 </p>
                             </div>
-                            <div class="col-md-6 text-center">
+                            <div class="col-md-6 offset-md-3 text-center">
                                 <h5>Book a Group Rate room</h5>
                                 <div>&nbsp;</div>
                                 <a class="btn btn-fill btn-large"
@@ -403,14 +407,11 @@
                                 </a>
                             </div>
                         </div>
-                        <!-- <div class="row text-center">
+                        <div class="row text-center">
                             <div class="col-md-6 offset-md-3" style="padding: 5px;">
-                                <a class="btn btn-accent btn-small" id="hotel-btn-show-map">
-                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                                    map
-                                </a>
+                                <p>We'll hava a shuttle bus running from the hotel to the Winery and back, so you won't have to worry once you're here</p>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -488,9 +489,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 offset-md-3">
-                    <h3>What are you waiting for?</h3>
-                    <p>We would greatly appreciate if you could RSVP before 1st of January '20 (New Years)</p>
-                    <form id="rsvp-form" class="rsvp-form"
+                    <h3>R.S.V.P has closed now, but if you already made the list, there's some more you can do</h3>
+                    <h4>Soon to come: a link for food allergies/menu preferences</h4>
+                    <p></p>
+                    <!-- <form id="rsvp-form" class="rsvp-form"
                           action=""
                           method="POST">
                         <div class="row">
@@ -542,7 +544,7 @@
                             Yes,
                             that's me!
                         </button>
-                    </form>
+                    </form>-->
                 </div>
             </div>
         </div>
@@ -553,7 +555,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center content">
                     <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                    <p>Crafted by Zeph with lots of <span class="fa fa-heart pulse2"></span> for Anita</p>
+                    <p>Stolen by Zeph with lots of <span class="fa fa-heart pulse2"></span> for Anita</p>
                 </div>
             </div>
         </div>
