@@ -46,6 +46,11 @@
         .modal-backdrop.in {
           opacity: 0.05;
         }
+        .hover-img-link:hover {
+            box-shadow: black;
+            opacity: .9;
+            transform: scale(0.95);
+        }
     </style>
 </head>
 <body id="top">
@@ -96,12 +101,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 hidden-xs"></div>
-                <div class="col-sm-4 hidden-xs text-center">
+                <div class="col-sm-4 d-none"></div>
+                <div class="col-sm-4 d-none text-center">
                     <a href="#rsvp"
                        class="btn btn-accent btn-large rsvp-btn">RSVP</a>
                 </div>
-                <div class="col-sm-4 hidden-xs"></div>
+                <div class="col-sm-4 d-none d-sm-block"></div>
             </div>
         </div>
         <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
@@ -184,7 +189,7 @@
                 </div>
             </div>
             <div class="row section-padding">
-                <div class="col-md-4 offset-md-4 text-center">
+                <div class="col-lg-4 offset-lg-4 text-center">
                     <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
                         <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
                     </a>
@@ -366,7 +371,7 @@
         </div>
         <div id="hotel-map-canvas"></div>
         <div id="hotel-map-content-wrapper" class="container pointer-events-none">
-            <div class="row">v
+            <div class="row">
                 <div class="offset-1 col-10 offset-md-3 col-md-6">
                     <div class="text-center">
                         <div id="hotel-btn-show-content" class="toggle-map-content pointer-events-auto">
@@ -479,7 +484,7 @@
                 <div class="col-md-6 offset-md-3">
                     <h3>還在等什麼？</h3>
                     <p>請在12/31日前填完表格，亭潔狀晞感謝你！</p>
-                    <form id="rsvp-form" class="rsvp-form"
+                    <!-- <form id="rsvp-form" class="rsvp-form"
                           action=""
                           method="POST">
                         <div class="row">
@@ -524,7 +529,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<div class="row form-input-group">
+                        <div class="row form-input-group">
                             <div class="col-md-6">
                                 <i class="fa fa-thumbs-down"></i>
                                 <h4>Can't come? That's ok...</h4>
@@ -532,7 +537,7 @@
                             <div  class="col-md-6">
                                 <input id="decline" type="checkbox" name="decline" value="decline"/> <label for="decline">I'm sorry, I can't come</label>
                             </div>
-                        </div>-->
+                        </div>
                         <div class="row">
                             <div class="col-md-12" id="alert-wrapper"></div>
                         </div>
@@ -540,7 +545,7 @@
                             Yes,
                             that's me!
                         </button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
