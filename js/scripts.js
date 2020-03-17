@@ -196,14 +196,14 @@ $(document).ready(function () {
             title: "Zeph and Anita's Wedding",
 
             // Event start date
-            start: new Date('Mar 29, 2020 16:00'),
+            start: new Date('Jan 3, 2021 16:00'),
 
             // Event duration (IN MINUTES)
             // duration: 300,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Mar 29, 2020 22:00'),
+            end: new Date('Jan 3, 2021 22:00'),
 
             // Event Address
             address: 'Casa Real at Ruby Hill Winery, Livermore, CA',
@@ -223,13 +223,13 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== 'c2b4b86c677b969fdf2b9701b868e96f') {
+        if (MD5($('#invite_code').val()) !== '7e7c7a3e89e5a12fbb11d7f16cd7bbb8') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect. Try asking Zeph for the code'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbwrsTG7YumsEio-AMA1VC1E6Aml-1InEjQZvjHaIT_ODFjOoFg/exec', data)
                 .done(function (data) {
                     console.log(data);
-                    $('#alert-wrapper').html('');
+                    $('#alert-wrapper').html(alert_markup('success', 'Nice, your submission has been logged'));
                     $('#rsvp-modal').modal('show');
                 })
                 .fail(function (data) {

@@ -27,11 +27,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css">
+    <link rel="stylesheet" href="css/styles.min.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <style type="text/css">
         .fade.in {
@@ -232,9 +232,9 @@
                         <p>
                             <strong>Cool Temperate</strong>
                             <br>
-                            It's going to be the start of Spring here in the bay area. The wedding will be held in Livermore,
-                            which historically is in the mid 60&deg;F's (around 17&deg;C). Dinner will be indoors, but expect cool weather
-                            for the outside portions.
+                            It's going to be the dead of winter here in the SF Bay Area. The wedding will be held in Livermore,
+                            which historically is in the mid 40&deg;F's (around 7&deg;C). Dinner will be indoors, but expect cool weather
+                            for the outside portions (if there are any).
                         </p>
                     </div>
                 </div><!-- /.modal-content -->
@@ -337,7 +337,7 @@
             </div>
         </div>
         <div class="text-center">
-            <h4>Photos courtsey of <a href="https://www.annanatividadphotography.com">Anna Natividad</a></h4>
+            <h4>Photos 1, 2, & 6 courtsey of <a href="https://www.annanatividadphotography.com">Anna Natividad</a></h4>
         </div>
         
         <!--<div class="row">
@@ -403,7 +403,7 @@
                                 <h5>Book a Group Rate room</h5>
                                 <div>&nbsp;</div>
                                 <a class="btn btn-fill btn-large"
-                                   href="https://www.marriott.com/events/start.mi?id=1572277147928&key=GRP">
+                                href="#" onclick="alert('Not setup yet, check back soon')">
                                     <i class="fa fa-hotel"></i>&nbsp;&nbsp;Book Room
                                 </a>
                             </div>
@@ -490,24 +490,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 offset-md-3">
-                    <h3>R.S.V.P has closed now, but if you already made the list, there's some more you can do</h3>
+                    <h3>R.S.V.P is back on! Please send a response by October 1st</h3>
                     <h4>Soon to come: a link for food allergies/menu preferences</h4>
                     <p></p>
-                    <!-- <form id="rsvp-form" class="rsvp-form"
+                    <form id="rsvp-form" class="rsvp-form"
                           action=""
                           method="POST">
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                    <i class="fa fa-envelope"></i><input type="email" name="email" id="email" class=""
                                                                          placeholder="Your email"
                                                                          required>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-user"></i><input name="name" class=""
-                                                                     placeholder="Your name"
+                                    <i class="fa fa-user"></i><input type="text" name="name" id="name" class=""
+                                                                     placeholder="Your full name"
                                                                      required>
                                 </div>
                             </div>
@@ -516,13 +516,13 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-users"></i><input type="text" name="extras" class=""
-                                                                      placeholder="Partner and/or kids">
+                                    <i class="fa fa-users"></i><input type="text" name="Additional Guests" id="extras" class=""
+                                                                      placeholder="Partner || kids' names">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                    <i class="fa fa-key"></i><input type="number" name="Invite code" id="invite_code"
                                                                     class="" min="0"
                                                                     placeholder="Invite code"
                                                                     required>
@@ -532,9 +532,29 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-input-group">
+                                    <i class="fa fa-cutlery"></i><input type="text" name="Food restrictions" id="food_restrictions"
+                                                                      class=""
+                                                                      placeholder="Any food alergies or restrictions? (who?)">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-input-group">
                                     <i class="fa fa-music"></i><input type="text" name="song_suggestion" id="song_suggestion"
                                                                       class=""
                                                                       placeholder="A song I promise to dance to...">
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-input-group">
+                                    <i class="em em-no_entry_sign" aria-label="NO ENTRY SIGN">&nbsp;</i>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="checkbox" name="can attend?" id="not_coming"
+                                                    value="not coming" class="">
+                                    <label for="not_coming">&nbsp;&nbsp;Sorry, I can't make it ༼☯﹏☯༽</label>
                                 </div>
                             </div>
                         </div>
@@ -545,7 +565,7 @@
                             Yes,
                             that's me!
                         </button>
-                    </form>-->
+                    </form>
                 </div>
             </div>
         </div>
