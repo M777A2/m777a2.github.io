@@ -914,3 +914,19 @@ body.modal-open {
 .modal-body {
   padding:25px;
 }
+
+a:not([href]):not([tabindex]) {
+  color: lightpink;
+}
+
+a:not([href]):not([tabindex]):hover {
+  color: lightpink;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+.modal {
+  background: rgba(0,0,0,0.5);
+}
