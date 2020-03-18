@@ -118,7 +118,7 @@
                 <div class="col-md-12 text-center">
                     <h3>狀晞和亭潔熱烈歡迎你在三月二十九日來參加鄭陳婚禮大囍~</h3>
                     <p>
-                        The date is the 29<sup>th</sup> of March 2020 and we would like you to be a part of
+                        The date is the 3<sup>rd</sup> of January 2021 and we would like you to be a part of
                         it.
                     </p>
                     <!--<div class="share-bar"></div>-->
@@ -393,7 +393,7 @@
                                 <h5>Book a Group Rate room</h5>
                                 <div>&nbsp;</div>
                                 <a class="btn btn-fill btn-large"
-                                   href="https://www.marriott.com/events/start.mi?id=1572277147928&key=GRP">
+                                   href="#hotel" onclick="alert('抱歉，暫時無法使用。')">
                                     <i class="fa fa-hotel"></i>&nbsp;&nbsp;Book Room
                                 </a>
                             </div>
@@ -483,22 +483,22 @@
             <div class="row">
                 <div class="col-md-6 offset-md-3">
                     <h3>還在等什麼？</h3>
-                    <p>請在12/31日前填完表格，亭潔狀晞感謝你！</p>
-                    <!-- <form id="rsvp-form" class="rsvp-form"
+                    <p>請在9/30日前填完表格，亭潔狀晞感謝你！</p>
+                    <form id="rsvp-form" class="rsvp-form"
                           action=""
                           method="POST">
-                        <div class="row">
+                          <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                    <i class="fa fa-envelope"></i><input type="email" name="Email" id="email" class=""
                                                                          placeholder="Your email"
                                                                          required>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-user"></i><input name="name" class=""
-                                                                     placeholder="Your name"
+                                    <i class="fa fa-user"></i><input type="text" name="Name" id="name" class=""
+                                                                     placeholder="Your full name"
                                                                      required>
                                 </div>
                             </div>
@@ -507,13 +507,13 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-users"></i><input type="text" name="extras" class=""
-                                                                      placeholder="Partner and/or kids">
+                                    <i class="fa fa-users"></i><input type="text" name="Additional Guests" id="extras" class=""
+                                                                      placeholder="Partner || kids' names">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-input-group">
-                                    <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                    <i class="fa fa-key"></i><input type="number" name="Invite Code" id="invite_code"
                                                                     class="" min="0"
                                                                     placeholder="Invite code"
                                                                     required>
@@ -523,19 +523,30 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-input-group">
+                                    <i class="fa fa-cutlery"></i><input type="text" name="Food Restrictions" id="food_restrictions"
+                                                                      class=""
+                                                                      placeholder="Any food alergies or restrictions? (who?)">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-input-group">
                                     <i class="fa fa-music"></i><input type="text" name="song_suggestion" id="song_suggestion"
                                                                       class=""
                                                                       placeholder="A song I promise to dance to...">
                                 </div>
                             </div>
-                        </div>
-                        <div class="row form-input-group">
-                            <div class="col-md-6">
-                                <i class="fa fa-thumbs-down"></i>
-                                <h4>Can't come? That's ok...</h4>
-                            </div>
-                            <div  class="col-md-6">
-                                <input id="decline" type="checkbox" name="decline" value="decline"/> <label for="decline">I'm sorry, I can't come</label>
+                        </div> -->
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-input-group">
+                                    <i class="em em-no_entry_sign" aria-label="NO ENTRY SIGN">&nbsp;</i>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="checkbox" name="Attending?" id="not_coming"
+                                                    value="not coming" class="">
+                                    <label for="not_coming">&nbsp;&nbsp;Sorry, I can't make it ༼☯﹏☯༽</label>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -545,7 +556,7 @@
                             Yes,
                             that's me!
                         </button>
-                    </form> -->
+                    </form>
                 </div>
             </div>
         </div>
