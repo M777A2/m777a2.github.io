@@ -223,7 +223,7 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== '7e7c7a3e89e5a12fbb11d7f16cd7bbb8') {
+        if (MD5($('#invite_code').val()) !== '3a325616d03a6af99e1d0b24eecb6274') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect. Try asking Zeph for the code'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbwrsTG7YumsEio-AMA1VC1E6Aml-1InEjQZvjHaIT_ODFjOoFg/exec', data)
